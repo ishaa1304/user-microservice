@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 app.use(express.json()); // Middleware to parse JSON
+app.use(express.static("public"));
+
 
 // In-memory database for tasks
 let tasks = [

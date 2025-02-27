@@ -14,6 +14,9 @@ spec:
     spec:
       containers:
         - name: user-microservice
-          image: ishaaa1/user-microservice:v1.0
+          image: ishaaa1/user-microservice:latest
           ports:
             - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"

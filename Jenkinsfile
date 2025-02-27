@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/ishaa1304/user-microservice.git'
+                git branch: 'main', url: 'https://github.com/ishaa1304/user-microservice.git'
             }
         }
         
